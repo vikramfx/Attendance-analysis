@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Collect attendance data
         const attendanceCounts = {};
+        const dailyEmailCounts = [];
 
         attendanceDaysInputs.forEach(input => {
             const dayAttendance = input.value.trim();
@@ -28,15 +29,23 @@ document.addEventListener('DOMContentLoaded', function () {
                         attendanceCounts[email]++;
                     }
                 });
+
+                // Store the count of emails for this day
+                dailyEmailCounts.push(presentEmails.length);
+            } else {
+                // Store 0 for days with no attendance
+                dailyEmailCounts.push(0);
             }
         });
 
         // Filter emails based on minimum days requirement
         const qualifiedEmails = Object.keys(attendanceCounts).filter(email => attendanceCounts[email] >= minDays);
+        const qualifiedCount = qualifiedEmails.length;
 
         // Create result table
         let result = `<h3 class="text-center">Results:</h3>`;
         result += `<p class="text-center"><strong>Total Emails Count:</strong> ${Object.keys(attendanceCounts).length}</p>`;
+        result += `<p class="text-center"><strong>Attendance with Minimum Days (${minDays} days):</strong> ${qualifiedCount} email${qualifiedCount !== 1 ? 's' : ''}</p>`;
 
         if (qualifiedEmails.length > 0) {
             result += `<table class="table table-striped mt-3"><thead><tr><th>#</th><th>Email</th><th>Days Attended</th></tr></thead><tbody>`;
