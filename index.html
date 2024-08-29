@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Analysis</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-light-blue">
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 class="mb-5 text-center text-dark-blue">ATTENDANCE ANALYSIS</h1>
+        
+        <!-- Email Input -->
+        <div class="mb-4">
+            <label for="emailInput" class="form-label fs-5">Enter Emails (space-separated):</label>
+            <input type="text" id="emailInput" class="form-control form-control-lg" placeholder="example@domain.com example2@domain.com">
+        </div>
+
+        <!-- Attendance Days -->
+        <div class="mb-4">
+            <label for="attendanceDays" class="form-label fs-5">Attendance from Day 1 to Day 10:</label>
+            <div id="attendanceDays">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 1">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 2">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 3">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 4">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 5">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 6">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 7">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 8">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 9">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 10">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 11">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="Day 12">
+            </div>
+        </div>
+
+        <!-- Minimum Days Option -->
+        <div class="mb-4">
+            <label for="minDays" class="form-label fs-5">Attendance with Minimum Days:</label>
+            <select id="minDays" class="form-select form-select-lg">
+                <option value="1">1 Day</option>
+                <option value="2">2 Days</option>
+                <option value="3">3 Days</option>
+                <option value="4">4 Days</option>
+                <option value="5">5 Days</option>
+                <option value="6">6 Days</option>
+                <option value="7">7 Days</option>
+                <option value="8">8 Days</option>
+                <option value="9">9 Days</option>
+                <option value="10">10 Days</option>
+                <option value="10">11 Days</option>
+                <option value="10">12 Days</option>
+            </select>
+        </div>
+
+        <!-- Submit Button Container -->
+        <div class="btn-container">
+            <button id="submitBtn" class="btn btn-primary btn-lg w-100">Submit</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" class="mt-5"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

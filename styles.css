@@ -1,0 +1,114 @@
+/* Light blue and grey theme */
+.bg-light-blue {
+    background-color: #ECF1F5; /* Light blue-grey background */
+    padding: 30px; /* Added padding to the background for spacing */
+}
+
+.text-dark-blue {
+    color: #00004A; /* Dark blue text color */
+    margin-bottom: 20px; /* Add space below text elements */
+}
+
+.container {
+    max-width: 1200px; /* Restrict container width for better layout */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 40px; /* Padding inside the container */
+    background-color: #ffffff; /* White background for the container */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Slightly stronger shadow */
+    border-radius: 10px; /* More rounded corners */
+}
+
+/* Table Styles */
+.table {
+    border-radius: 0.5rem; /* More rounded corners */
+    overflow: hidden; /* Clip content */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow */
+    margin-bottom: 30px; /* Space below the table */
+}
+
+.table th, .table td {
+    padding: 1.5rem; /* Increase padding for better readability */
+}
+
+/* Form Control Styles */
+.form-control {
+    border: 1px solid #ced4da; /* Grey border */
+    border-radius: 0.5rem; /* More rounded corners */
+    padding: 0.75rem 1rem; /* Adjust padding for better spacing */
+    margin-bottom: 20px; /* Space below each form control */
+}
+
+.form-control:focus {
+    border-color: #3B7CF5; /* Light blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(59, 124, 245, 0.25); /* Light blue shadow on focus */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #3B7CF5; /* Light blue button */
+    border-color: #3B7CF5;
+    padding: 0.75rem 1.5rem; /* Increase padding for a more substantial feel */
+    border-radius: 0.5rem; /* More rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    margin-top: 20px; /* Space above the button */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #004085;
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.btn-primary:active {
+    background-color: #004085; /* Even darker blue on click */
+    border-color: #002d5a;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.5); /* Blue shadow on focus */
+}
+
+/* Text Alignment */
+.text-center {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below centered text */
+}
+
+/* Centering the Button */
+.btn-container {
+    text-align: center; /* Center align button */
+    margin-top: 30px; /* Space above the button container */
+}
+
+/* Additional Margin Below Sections */
+.mb-4 {
+    margin-bottom: 30px; /* Increased space between sections */
+}
+
+/* Styling for Blue and White Theme Buttons */
+.btn-primary {
+    background-color: #007bff; /* Blue background */
+    border-color: #007bff; /* Blue border */
+    color: #ffffff; /* White text */
+    padding: 0.75rem 1.5rem; /* Increase padding for a substantial feel */
+    border-radius: 0.5rem; /* More rounded corners */
+    margin-top: 20px; /* Space above the button */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+    border-color: #004085; /* Darker blue border on hover */
+    color: #ffffff; /* White text on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.btn-primary:active {
+    background-color: #004085; /* Even darker blue background on click */
+    border-color: #003366; /* Even darker blue border on click */
+    color: #ffffff; /* White text on click */
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); /* Blue shadow on focus */
+}
