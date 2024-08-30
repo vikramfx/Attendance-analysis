@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Create result table
         let result = `<h3 class="text-center">Results:</h3>`;
         result += `<p class="text-center"><strong>Total Emails Count:</strong> ${Object.keys(attendanceCounts).length}</p>`;
+        result += `<p class="text-center"><strong>Total Emails Attended at Least ${minDays} Days:</strong> ${qualifiedEmails.length}</p>`;
 
         if (qualifiedEmails.length > 0) {
             result += `<table class="table table-striped mt-3"><thead><tr><th>#</th><th>Email</th><th>Days Attended</th></tr></thead><tbody>`;
